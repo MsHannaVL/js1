@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <p id="admin1"></p>
-    <p id="name1"></p>
-    
     <script>
         let name;
         let admin;
         name = "Виталий Валентинович";
         admin = name;
-        document.write ("admin: " + admin);
+        document.write ("admin: " + name + "<br>");
+        alert(admin);
         function changeAdmin () {
-            admin = "Анна Михайловна";
-            document.getElementById("admin1").innerHTML="admin: " + admin;
-            document.getElementById("name1").innerHTML="name: " + name;
+             let admin = "Анна Михайловна";
+             let name = "Виталий Валентинович";
+            document.write("admin: " + admin + "<br>");
+            document.write("name: "+ name + "<br/>");  
             
         }  
   </script>
