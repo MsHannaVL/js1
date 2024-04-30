@@ -2,15 +2,12 @@
 <html>
 <body>
     <script>
-        let name;
-        let age;
-        let plus = 10;
-        name = prompt ("Введите сюда свое имя", "Введите имя");
-        document.write ("Ваше имя " + name + ". Очень рады знакомству с Вами!!!");
-        age = prompt ("Сколько Вам лет, если не секрет?", "35 лет");
-        age = Number(age) + Number(plus);
-        alert ("Через 10 лет Вам исполнится " + age + " лет!")
-        let restart = confirm("Начать заново?");
+        let name = window.prompt('Введите сюда своё имя', 'Введите имя');
+        document.write("Ваше имя " + name + ". Очень рады знакомству с Вами!!!");
+        let years = window.prompt("Сколько Вам лет, если не секрет?", '35');
+        let age = +years + 10;
+        alert("Через 10 лет Вам исполнится " + age + " лет!");
+        let repeat = confirm("Начать заново?");
     </script>
 </body>
 </html>
